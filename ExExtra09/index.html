@@ -1,0 +1,27 @@
+<html>
+<head></head>
+<body>
+  <h3>Calculadora de Pagamento</h3>
+  <form>
+    <label for="preco">Preco normal de etiqueta:</label>
+    <input type="number" id="preco" required><br><br>
+
+    <label for="condicao">Condicao de pagamento:</label><br>
+    <input type="radio" id="avista-dinheiro" name="condicao" value="a">
+
+    <label for="avista-dinheiro">A vista em dinheiro ou cheque</label><br>
+    <input type="radio" id="avista-cartao" name="condicao" value="b">
+
+    <label for="avista-cartao">A vista no cartao de credito</label><br>
+    <input type="radio" id="duas-vezes-normal" name="condicao" value="c">
+
+    <label for="duas-vezes-normal">Em duas vezes, preco normal de etiqueta</label><br>
+    <input type="radio" id="duas-vezes-juros" name="condicao" value="d">
+
+    <label for="duas-vezes-juros">Em duas vezes, preco normal de etiqueta mais juros de 10%</label><br><br>
+    <button type="button" onclick="calcularPagamento()">Calcular Pagamento</button>
+  </form>
+  <div id="resultado"></div>
+</body>
+<script src="script9.js"></script>
+</html>
